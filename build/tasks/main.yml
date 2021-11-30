@@ -28,7 +28,7 @@
 - name: ensure Dockerfile exists
   copy:
     src: Dockerfile
-    dest: {{ package_folder }}/Dockerfile
+    dest: {{ package_folder }}
 
 - name: login into dockerhub
   docker_login:
