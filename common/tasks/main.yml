@@ -1,19 +1,15 @@
 ---
 # tasks file for common
-- name: install required components
-  hosts: all
-  become: yes
 
-  tasks:
-    - name: ensure recuired packages are installed
-      apt:
-        name: "{{item}}"
-        state: present
-      with_items:
-        - python-pip
-        - python-setuptools
-        - virtualenv
-        - docker-ce
-    - name : ensure docker Python module is installed
-      pip:
-        name: docker
+- name: ensure recuired packages are installed
+  apt:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - python-pip
+    - python-setuptools
+    - virtualenv
+    - docker-ce
+- name : ensure docker Python module is installed
+  pip:
+    name: docker
