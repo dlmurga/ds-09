@@ -32,9 +32,9 @@
 
 - name: login into dockerhub
   docker_login:
-    email: dl.murga@yandex.ru
-    username: dlmurga
-    password: pla5stex_dh
+    email: "{{ email }}"
+    username: "{{ username }}"
+    password: "{{ password }}"
 
 - name: build docker image
   docker_image:

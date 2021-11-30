@@ -1,3 +1,6 @@
 ---
 # defaults file for build
 package_folder: /package_folder
+email: dl.murga@yandex.ru
+username: dlmurga
+password: pla5stex_gh
