@@ -1,2 +1,8 @@
 ---
 # tasks file for run
+- name: run docker container with java app
+  docker_container:
+    name: app_tomcat_ds09
+    image: dlmurga/app_tomcat_ds09
+    ports:
+      - "9090:8080"

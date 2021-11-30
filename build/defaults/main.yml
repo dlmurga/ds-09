@@ -1,2 +1,3 @@
 ---
 # defaults file for build
+package_folder: /package_folder

@@ -7,6 +7,7 @@
     - common
     - build
 
+
 - name: app server configuration
   hosts: run
   become: yes
