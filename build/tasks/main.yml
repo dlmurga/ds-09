@@ -35,6 +35,7 @@
     email: "{{ email }}"
     username: "{{ username }}"
     password: "{{ password }}"
+    reauthorize: yes
 
 - name: build docker image
   docker_image:
