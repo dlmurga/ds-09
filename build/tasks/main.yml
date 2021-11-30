@@ -41,5 +41,6 @@
     path: "{{ package_folder }}"
     name: dlmurga/app_tomcat_ds09
     push: yes
+    nocache: yes
     buildargs:
       package_folder: "{{ package_folder }}"
